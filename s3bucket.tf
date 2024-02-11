@@ -1,11 +1,11 @@
 resource "aws_s3_bucket" "the-bucket2" {
-  bucket = "terraform_statewest_lock1012101211"
+  bucket = "terraform-statewest-lock1012101211"
 
   force_destroy = true
 }
 resource "aws_s3_object" "object" {
   bucket = aws_s3_bucket.the-bucket2.id
-  key    = "ddemo/cluster/"
+  key    = "demo/cluster/"
 }
 
 resource "aws_s3_bucket_versioning" "state_versioning" {
