@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "the-bucket2" {
-  bucket = "terraform_state_lock1012101211"
+  bucket = "terraform_statewest_lock1012101211"
 
   force_destroy = true
 }
